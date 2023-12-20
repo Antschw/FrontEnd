@@ -19,17 +19,23 @@
             <a href="category.html" class="category">Sports de combat</a>
             <a href="category.html" class="category">Sports Outdoor</a>
         </nav>
-        <div class="field">
-            <h2>Nos Dernières Actus</h2>
-            <a href="article.html" class="clickable-box">
-                <div class="box">
-                    <img src="resources/main_picture.png" alt="Article Image">
-                    <h3>Article 6</h3>
-                    <p>Date</p>
-                    <p>Description...</p>
-                    <p>Auteur</p>
+        <div class="contact-form">
+            <h2>Se Connecter</h2>
+            <a href="register.html">Pas encore inscrit ?</a>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="email">Adresse Mail</label>
+                    <input type="email" id="email" name="email" placeholder="Adresse Mail" maxlength="50">
                 </div>
-            </a>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" maxlength="50">
+                </div>
+                <div class="form-group">
+                    <a href="forgotten.html" id="forgotPassword">Mot de passe oublié ?</a>
+                </div>
+                <button type="submit">Connexion</button>
+            </form>
         </div>
     </body>
     <footer>

@@ -19,17 +19,31 @@
             <a href="category.html" class="category">Sports de combat</a>
             <a href="category.html" class="category">Sports Outdoor</a>
         </nav>
-        <div class="field">
-            <h2>Nos Dernières Actus</h2>
-            <a href="article.html" class="clickable-box">
-                <div class="box">
-                    <img src="resources/main_picture.png" alt="Article Image">
-                    <h3>Article 6</h3>
-                    <p>Date</p>
-                    <p>Description...</p>
-                    <p>Auteur</p>
+        <div class="contact-form">
+            <h2>S'enregistrer</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="firstName">Prénom</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Prénom" maxlength="100">
                 </div>
-            </a>
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" placeholder="Nom" maxlength="100">
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresse Mail</label>
+                    <input type="email" id="email" name="email" placeholder="Adresse Mail" maxlength="50">
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" maxlength="50">
+                </div>
+                <div class="form-group">
+                    <label for="passwordVerification">Confirmez mot de passe</label>
+                    <input type="password" id="passwordVerification" name="passwordVerification" maxlength="50">
+                </div>
+                <button type="submit">Soumettre</button>
+            </form>
         </div>
     </body>
     <footer>

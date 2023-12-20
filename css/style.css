@@ -347,3 +347,8 @@ button {
 button:hover {
     background-color: #cb9500;
 }
+
+#forgotPassword {
+    text-decoration: none;
+    color: inherit;
+}

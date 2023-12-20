@@ -11,6 +11,11 @@ html, body {
     padding: 20px 0;
 }
 
+.header a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .header h1 {
     font-family: Impact, serif;
     font-size: 200%;
@@ -128,6 +133,7 @@ html, body {
 #next img {
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 
 #previous img:hover,
@@ -171,9 +177,9 @@ html, body {
 }
 
 .article-link {
-    text-decoration: none; /* Enlève le soulignement par défaut des liens */
-    color: inherit; /* Utilise la couleur de texte héritée */
-    flex: 1; /* Si vos articles sont des blocs, cela garantit que le lien les englobe entièrement */
+    text-decoration: none;
+    color: inherit;
+    flex: 1;
     margin: 2% 2%;
     max-width: 30%;
     min-width: 25%;

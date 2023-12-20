@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const articles = document.querySelectorAll('.article-link');
+    const articles = document.querySelectorAll('.clickable-box');
 
     articles.forEach(function(article) {
         article.addEventListener('click', function() {

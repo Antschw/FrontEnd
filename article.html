@@ -2,12 +2,15 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>Les Sportifs - Accueil</title>
+        <title id="tabtitle">Les Sportifs - </title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="resources/favicon.png" type="image/x-icon">
     </head>
     <header class="header">
-        <h1>Les Sportifs</h1>
+        <a href="index.html" class="nostyle">
+            <h1>Les Sportifs</h1>
+        </a>
+        <a href="login.html" class="account"><img src="resources/account_circle.svg" alt="Account"></a>
     </header>
     <body>
         <nav>
@@ -16,15 +19,18 @@
             <a href="category.html" class="category">Sports de combat</a>
             <a href="category.html" class="category">Sports Outdoor</a>
         </nav>
-        <article>
+        <section>
             <img src="resources/main_picture.png" alt="Article Image">
             <h1 id="title">Titre de l'article</h1>
             <h2 id="subtitle"></h2>
-            <div class="article">
-                <p id="content"></p>
+            <article>
+                <p id="introduction"></p>
+                <p id="firstPart"></p>
+                <p id="secondPart"></p>
+                <p id="conclusion"></p>
                 <p id="final"></p>
-            </div>
-        </article>
+            </article>
+        </section>
     </body>
     <footer>
         <a href="index.html" class="footer-link">Accueil</a> | <a href="category.html" class="footer-link">Catégories</a> | <a href="contact.html" class="footer-link">Contact</a> | <a href="cgu.html" class="footer-link">CGU</a>

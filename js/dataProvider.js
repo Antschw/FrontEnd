@@ -25,6 +25,7 @@ function fillBoxes(){
                 return response.json(); // On convertit la réponse en JSON
             })
             .then(data => {
+                box.children[0].src = data.source;
                 box.children[1].innerText = data.title;
                 box.children[2].innerText = data.date;
                 box.children[3].innerText = data.subtitle;

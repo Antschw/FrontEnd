@@ -28,7 +28,19 @@ html, body {
             3px  3px 0 #000; /* Couleur du contour et décalage */
 }
 
-.nav-bar {
+.account {
+    margin: 0 0;
+    padding: 0;
+    position: absolute;
+    top: 7.7%;
+    transform: translateY(-50%);
+    right: 3%;
+    z-index: 1;
+    background-color: transparent;
+    border: none;
+}
+
+nav {
     position: sticky;
     top: 0;
     z-index: 10;
@@ -74,8 +86,8 @@ html, body {
 #container img {
     margin: 0 0;
     padding: 0;
-    min-width: 100%;
     min-height: 30%;
+    width: 100%;
     display: none;
     opacity: 1;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -174,6 +186,8 @@ html, body {
 
 .article {
     text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .article-link {
@@ -214,12 +228,41 @@ html, body {
     border-top-right-radius: 15px;
 }
 
+article{
+    position: relative;
+    margin: 0 0;
+    padding: 0;
+}
+
+article img{
+    filter: brightness(0.5);
+    margin: 0 0;
+    padding: 0;
+    min-height: 30%;
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    height: 50vh;
+    object-fit: cover;
+}
+
+article h1, article h2 {
+    position: absolute;
+    top : 50%;
+    z-index: 1;
+}
+
+#final {
+    font-family: "Century Gothic", serif;
+    font-style: italic;
+}
+
 footer {
     background-color: rgba(70, 70, 70);
     color: white;
     text-underline-mode: off;
     text-align: center;
     padding: 30px 0;
+    margin-bottom: 0;
 }
 
 .footer-link {

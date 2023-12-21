@@ -312,6 +312,22 @@
   border-top-right-radius: 15px;
 }
 
+* .box h3 {
+  text-align: left;
+  margin-left: 7%;
+}
+
+* .box p {
+  text-align: left;
+  margin-left: 7%;
+}
+
+* .box .gray {
+  text-align: left;
+  margin-left: 7%;
+  color: gray;
+}
+
 * section {
   position: relative;
   margin: 0 0;

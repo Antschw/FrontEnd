@@ -232,14 +232,31 @@
         }
     }
     
-    .box img {
-        width: 100%;
-        height: auto;
-        display: block;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+    .box {
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        h3 {
+            text-align: left;
+            margin-left: 7%;
+        }
+        p {
+            text-align: left;
+            margin-left: 7%;
+        }
+
+        .gray {
+            text-align: left;
+            margin-left: 7%;
+            color: gray;
+        }
+        
     }
-    
     section{
         position: relative;
         margin: 0 0;

@@ -3,6 +3,20 @@ let passwordInput = document.querySelector("#password");
 
 let errorNode = document.querySelector("#errorMessage");
 
+function notify(message) {
+    let container = document.querySelector("#notification-container");
+
+    let notification = document.createElement("div");
+    notification.classList.add("notification");
+    notification.textContent = message;
+
+    container.appendChild(notification);
+
+    setTimeout(() => {
+        notification.remove();
+    }, 3000);
+}
+
 document.querySelector("#loginForm").addEventListener("submit", async (event) => {
     errorNode.setAttribute("hidden", "");
 
@@ -17,6 +31,9 @@ document.querySelector("#loginForm").addEventListener("submit", async (event) =>
         return event.preventDefault();
     }
 
-    alert("Enjoy");
+    notify("Connecté avec succès");
+    setTimeout(() => {
+        document.location.href = "profile.html";
+    }, 1000);
     event.preventDefault();
 })

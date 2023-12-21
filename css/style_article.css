@@ -40,6 +40,10 @@ main h3 {
     z-index: 1;
 }
 
+section {
+    margin: 50px 30% 30px;
+}
+
 @media screen and (max-width: 600px){
     main h2 {
         top: 3%;

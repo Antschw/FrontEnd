@@ -1,11 +1,6 @@
-import data from '/data/article1.json' assert { type: 'json' };
-
 if (document.title === "Les Sportifs - Accueil") {
     console.log("You are on page Accueil");
     fillBoxes();
-} else {
-    console.log("You are on page Article")
-    fillArticle();
 }
 
 function fillBoxes(){
@@ -36,31 +31,6 @@ function fillBoxes(){
             });
 
         countBox += 1;
-    });
-}
-
-function fillArticle(){
-
-    const image = document.querySelector("#articleImage")
-    const tabtitle = document.querySelector("#tabtitle");
-    const title = document.querySelector("#title");
-    const subtitle = document.querySelector("#subtitle");
-    const introduction = document.querySelector("#introduction");
-    const firstPart = document.querySelector("#firstPart");
-    const secondPart = document.querySelector("#secondPart");
-    const conclusion = document.querySelector("#conclusion");
-    const final = document.querySelector("#final");
-
-    document.addEventListener('DOMContentLoaded', () => {
-        image.src = data.source;
-        tabtitle.innerText += data.title;
-        title.innerText = data.title;
-        subtitle.innerText = data.subtitle;
-        introduction.innerText = data.introduction;
-        firstPart.innerText = data.firstPart;
-        secondPart.innerText = data.secondPart;
-        conclusion.innerText = data.conclusion;
-        final.innerText = data.author + " - " + data.work + " - " + data.date;
     });
 }
 

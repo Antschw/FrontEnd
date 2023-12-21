@@ -3,11 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Les Sportifs - Inscription</title>
+        <title>Les Sportifs - Profil</title>
         <link rel="stylesheet" href="css/style.css"/>
-        <link rel="stylesheet" href="css/register.css"/>
-        <link rel="icon" href="resources/register.png" type="image/x-icon"/>
+        <link rel="stylesheet" href="css/profile.css"/>
+        <link rel="icon" href="resources/profile.png" type="image/x-icon"/>
     </head>
+    
     <body>
         <div id="notification-container"></div>
         <header class="header">
@@ -16,11 +17,12 @@
                 <div></div>
                 <div></div>
             </a>
-            <a href="index.html">
-                <img src="resources/Logo.png" alt="" class="logo">
+            <a href="index.html" class="nostyle">
+                <h1>Les Sportifs</h1>
             </a>
-            <a href="login.html" class="account"><img src="resources/account_circle.svg" alt="Icone de compte"></a>
+            <a href="login.html" class="account"><img src="resources/account_circle.svg" alt="Compte"></a>
         </header>
+
         <nav>
             <a href="category.html" class="category">Sports collectifs</a>
             <a href="category.html" class="category">Sports de glisse</a>
@@ -30,10 +32,10 @@
     
         <main>
             <div class="content">
-                <h2>Inscription</h2>
+                <h2>Profil</h2>
                 
                 <section class="contact-form">
-                    <form action="#" method="post" id="registerForm">
+                    <form action="#" method="post" id="profileForm">
                         <div class="form-group">
                             <span id="errorMessage" style="color: red;" hidden>Erreur</span>
                         </div>
@@ -49,24 +51,12 @@
                             <label for="email">Adresse Mail</label>
                             <input type="email" id="email" name="email" placeholder="Adresse Mail" maxlength="50">
                         </div>
-                        <div class="form-group">
-                            <label for="password">Mot de passe</label>
-                            <input type="password" id="password" name="password" maxlength="50">
-                        </div>
-                        <div class="form-group">
-                            <label for="passwordVerification">Confirmez le mot de passe</label>
-                            <input type="password" id="passwordVerification" name="passwordVerification" maxlength="50">
-                        </div>
-                        <button type="submit">Soumettre</button>
-                        <a style="margin-left: 10px;" href="login.html">J'ai déjà un compte</a>
-
+                        <button type="submit">Mettre à jour</button>
                     </form>
                 </section>
             </div>
         </main>
         
-        <!-- <div style="width: 100px;height: 120vh;background-color: red;"></div> -->
-
         <footer class="footer">
             <ul>
                 <li><a href="index.html" class="footer-link">Accueil</a></li>
@@ -76,7 +66,8 @@
             </ul>
         </footer>
 
-        <script src="js/register.js"></script>
+        <script src="js/profile.js"></script>
         <script src="js/script.js"></script>
+
     </body>
 </html>

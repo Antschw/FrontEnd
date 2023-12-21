@@ -20,7 +20,7 @@ function fillBoxes(){
         fetch(path)
             .then(response => {
                 if (!response.ok) {
-                    throw new Error('Réseau ou réponse non OK');
+                    throw new Error('Error when fetching path');
                 }
                 return response.json(); // On convertit la réponse en JSON
             })
@@ -32,7 +32,7 @@ function fillBoxes(){
                 box.children[4].innerText = data.author;
             })
             .catch(error => {
-                console.error('Erreur lors du chargement du fichier JSON:', error);
+                console.error('Error when loading the JSON file:', error);
             });
 
         countBox += 1;

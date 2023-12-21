@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Les Sportifs - Contact</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="resources/favicon.png" type="image/x-icon">
+    </head>
+    <header class="header">
+        <a href="index.html" class="nostyle">
+            <h1>Les Sportifs</h1>
+        </a>
+        <a href="login.html" class="account"><img src="resources/account_circle.svg" alt="Account"></a>
+    </header>
+    <body>
+        <nav>
+            <a href="category.html" class="category">Sports collectifs</a>
+            <a href="category.html" class="category">Sports de glisse</a>
+            <a href="category.html" class="category">Sports de combat</a>
+            <a href="category.html" class="category">Sports Outdoor</a>
+        </nav>
+        <div class="contact-form">
+            <h2>Contact</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nom Prénom</label>
+                    <input type="text" id="name" name="name" placeholder="Nom Prénom" maxlength="100">
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresse Mail</label>
+                    <input type="email" id="email" name="email" placeholder="Adresse Mail" maxlength="50">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Objet</label>
+                    <input type="text" id="subject" name="subject" placeholder="Objet" maxlength="150">
+                </div>
+                <div class="form-group">
+                    <label for="message">Votre Message</label>
+                    <textarea id="message" name="message" placeholder="Votre Message" maxlength="500"></textarea>
+                </div>
+                <button type="submit">Soumettre</button>
+            </form>
+        </div>
+    </body>
+    <footer>
+        <a href="index.html" class="footer-link">Accueil</a> | <a href="category.html" class="footer-link">Catégories</a> | <a href="contact.html" class="footer-link">Contact</a> | <a href="cgu.html" class="footer-link">CGU</a>
+    </footer>
+</html>

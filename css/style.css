@@ -1,13 +1,20 @@
-html, body {
+html {
     margin: 0 0;
     padding: 0;
     font-family: Calibri, sans-serif;
 }
 
+body {
+    margin: 0 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
 .header {
     margin : 0 0;
-    /*background-color: rgba(70, 70, 70);*/
-    background-color: white;
+    background-color: rgba(70, 70, 70);
     text-align: center;
     padding: 20px 0;
 }
@@ -230,13 +237,13 @@ nav {
     border-top-right-radius: 15px;
 }
 
-section{
+main{
     position: relative;
     margin: 0 0;
     padding: 0;
 }
 
-section img{
+main img{
     filter: brightness(0.5);
     margin: 0 0;
     padding: 0;
@@ -247,30 +254,29 @@ section img{
     object-fit: cover;
 }
 
-section h1 {
+main h1 {
     position: absolute;
     color: #dcdada;
     font-family: Bahnschrift, serif;
     font-weight: bolder;
     font-size: 30px;
-    top: 10%;
+    top: 6%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
 }
 
-section h2 {
+main h2 {
     position: absolute;
     color: #dcdada;
     font-weight: lighter;
     font-size: 20px;
     font-family: Bahnschrift, serif;
     font-style: italic;
-    top: 18%;
+    top: 14%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
-
 }
 
 article {
@@ -290,6 +296,7 @@ footer {
     text-align: center;
     padding: 30px 0;
     margin-bottom: 0;
+    margin-top: auto;
 }
 
 .footer-link {
@@ -355,4 +362,26 @@ button:hover {
 #forgotPassword {
     text-decoration: none;
     color: inherit;
+}
+
+@media screen and (max-width: 600px){
+    .clickable-box {
+        max-width: 50%;
+        min-width: 45%;
+    }
+    main h1 {
+        top: 3%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    main h2 {
+        top: 12%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    article {
+        margin: 50px 10% 30px;
+    }
 }

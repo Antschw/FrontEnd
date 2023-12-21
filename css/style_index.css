@@ -103,7 +103,9 @@
 
 .field h2{
     text-align: center;
-    font-family: Bahnschrift, serif;
+    font-family: Forte, serif;
+    font-size: 50px;
+    color: rgb(70, 70, 70);
 }
 
 .box-layout {
@@ -113,7 +115,11 @@
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
+}
 
+.box{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .clickable-box {
@@ -126,12 +132,13 @@
     min-width: 25%;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: #f8f9fa;
 }
 
 .clickable-box:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 10px #F8B500;
 }
 
 .box-link-clicked {
@@ -147,7 +154,7 @@
     }
 }
 
-.box img {
+.clickable-box img {
     width: 100%;
     height: auto;
     display: block;

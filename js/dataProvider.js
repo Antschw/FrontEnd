@@ -41,6 +41,7 @@ function fillBoxes(){
 
 function fillArticle(){
 
+    const image = document.querySelector("#articleImage")
     const tabtitle = document.querySelector("#tabtitle");
     const title = document.querySelector("#title");
     const subtitle = document.querySelector("#subtitle");
@@ -51,6 +52,7 @@ function fillArticle(){
     const final = document.querySelector("#final");
 
     document.addEventListener('DOMContentLoaded', () => {
+        image.src = data.source;
         tabtitle.innerText += data.title;
         title.innerText = data.title;
         subtitle.innerText = data.subtitle;

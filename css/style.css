@@ -2,6 +2,8 @@ html, body {
     margin: 0 0;
     padding: 0;
     font-family: Calibri, sans-serif;
+    min-height: 100vh;
+    position: relative;
 }
 
 .header {
@@ -279,13 +281,13 @@ article {
     font-style: italic;
 }
 
-footer {
+.footer {
+    position: relative;
     background-color: rgba(70, 70, 70);
     color: white;
-    text-underline-mode: off;
     text-align: center;
     padding: 30px 0;
-    margin-bottom: 0;
+    width: 100%;
 }
 
 .footer-link {
@@ -298,19 +300,6 @@ footer {
 
 .footer-link:hover, .footer-link-focus {
     filter: brightness(80%);
-}
-
-.contact-form {
-    background-color: #f9f9f9;
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
 }
 
 .form-group {
@@ -351,4 +340,8 @@ button:hover {
 #forgotPassword {
     text-decoration: none;
     color: inherit;
+}
+
+main {
+    min-height: 100vh;
 }

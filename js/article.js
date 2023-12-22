@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const articles = document.querySelectorAll('.clickable-box');
+    const audio = document.querySelector('#audio');
 
     /*
      * Pour chaque article in articles :
@@ -16,6 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
         article.addEventListener('click', function() {
             event.preventDefault(); // Empêche le comportement par défaut du lien
             const url = this.getAttribute('href'); // Récupère l'URL du lien
+
+            audio.play();
 
             article.classList.add('box-link-clicked'); // Ajout de la classe pour chager l'animation
 

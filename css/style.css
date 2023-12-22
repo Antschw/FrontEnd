@@ -173,3 +173,34 @@ button:hover {
     text-decoration: none;
     color: inherit;
 }
+
+/**
+ * Mise en place de scroll bar personnalisé
+ * Firefox n'est pas pris en charge pour cette modification
+ */
+
+/* Ceci est pour Webkit Browsers */
+::-webkit-scrollbar {
+    width: 12px;  /* la largeur des barres verticales*/
+    height: 12px; /*  la hauteur des barres horizontales */
+}
+
+::-webkit-scrollbar-track {
+    background: #f2f3f5; /* couleur du background de la scroll bar */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c2c5; /* couleur du background de la poignée de la scroll bar */
+    border-radius: 10px; /* arrondis sur la poignée de la barre de défilement */
+}
+
+/* Ceci est pour Internet Explorer (RIP) et Microsoft Edge */
+body {
+    scrollbar-base-color: #c1c2c5;
+    scrollbar-face-color: #f2f3f5;
+    scrollbar-3dlight-color: #c1c2c5;
+    scrollbar-highlight-color: #c1c2c5;
+    scrollbar-track-color: #f2f3f5;
+    scrollbar-arrow-color: #c1c2c5;
+    scrollbar-shadow-color: #c1c2c5;
+}

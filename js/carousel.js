@@ -16,6 +16,7 @@ startAutoSwitch();
 
 function initProgressBars() {
     progressBars = document.querySelectorAll(".progress-bar");
+    progressBars[0].style.width = "2%"
 }
 
 function initVisibility() {

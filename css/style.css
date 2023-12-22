@@ -162,11 +162,10 @@ nav {
 .footer-link {
     margin-right: 45px;
     margin-left: 45px;
-    /*  */
     padding: 10px 25px;
     text-decoration: none;
     color: whitesmoke;
-    border: 1px solid;
+    border: 2px solid;
     border-radius: 43px;
     font-size: 13px;
     line-height: 47px;
@@ -332,6 +331,10 @@ body {
     #burger-menu {
         display: flex;
     }
+
+    .logo {
+        scale: 40%;
+    }
 }
 
 /*
@@ -362,4 +365,10 @@ body {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+@media screen and (max-height: 600px) {
+    .logo {
+        scale: 25%;
+    }
 }

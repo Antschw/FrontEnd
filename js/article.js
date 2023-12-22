@@ -1,6 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
     const articles = document.querySelectorAll('.clickable-box');
 
+    /*
+     * Pour chaque article in articles :
+     * - on ajoute un eventListener, si cette event est activé :
+     *      - on empêche la redirection immédiate,
+     *      - on récupère l'url du lien appelé,
+     *      - on ajoute la class 'box-link-clicked',
+     *      - on attend 300ms le temps que l'animation se déroule puis,
+     *      - on lance le lien vers l'article,
+     *      - enfin, on retire la class précédement attribuée.
+     */
+
     articles.forEach(function(article) {
         article.addEventListener('click', function() {
             event.preventDefault(); // Empêche le comportement par défaut du lien

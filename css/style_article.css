@@ -15,29 +15,27 @@ main img{
     object-fit: cover;
 }
 
-main h2 {
+main h2, h3 {
     position: absolute;
     color: #dcdada;
+    transform: translateX(-50%);
     font-family: Bahnschrift, serif;
+    z-index: 1;
+}
+
+main h2 {
     font-weight: bolder;
     font-size: 30px;
     top: 6%;
     left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
 }
 
 main h3 {
-    position: absolute;
-    color: #dcdada;
     font-weight: lighter;
     font-size: 20px;
-    font-family: Bahnschrift, serif;
     font-style: italic;
     top: 14%;
     left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
 }
 
 section {
@@ -45,19 +43,22 @@ section {
 }
 
 @media screen and (max-width: 600px){
-    main h2 {
-        top: 3%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
     main h3 {
-        top: 12%;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 20%;
     }
 
     section {
         margin: 50px 10% 30px;
+    }
+}
+
+@media screen and (max-height: 600px){
+    main h2 {
+        font-size: 20px;
+        top:2%;
+    }
+    main h3 {
+        font-size: 15px;
+        top: 9%;
     }
 }

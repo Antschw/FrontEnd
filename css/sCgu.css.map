@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAC;EACJ,UAAU,EAAE,EAAE;EACd,aAAa,EAAE,EAAE;CASpB;;AAXD,AAGI,OAHG,CAGH,OAAO,CAAC;EACJ,WAAW,EAAE,EAAE;EACf,YAAY,EAAE,EAAE;CAKnB;;AAVL,AAOQ,OAPD,CAGH,OAAO,CAIH,CAAC,CAAC;EACE,MAAM,EAAE,EAAE;CACb",
+    "sources": [
+        "sCgu.scss"
+    ],
+    "names": [],
+    "file": "sCgu.css"
+}

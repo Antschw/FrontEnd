@@ -1,5 +1,5 @@
-var burgerMenu = document.querySelector("#burger-menu");
-var nav = document.querySelector("nav");
+let burgerMenu = document.querySelector("#burger-menu");
+let nav = document.querySelector("nav");
 
 burgerMenu.addEventListener("click", () => {
     console.log("aze");

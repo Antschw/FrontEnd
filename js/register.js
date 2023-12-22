@@ -30,7 +30,7 @@ document.querySelector("#registerForm").addEventListener("submit", async (event)
     let passwordVerification = passwordVerificationInput.value;
 
     if ((!firstName || !name || !email || !password || !passwordVerification) || 
-        (firstName == "" || name == "" || email == "" || password == "" || passwordVerification == "")) {
+        (firstName === "" || name === "" || email === "" || password === "" || passwordVerification === "")) {
         errorNode.innerText = "Merci de remplir tous les champs";
         errorNode.removeAttribute("hidden");
         return event.preventDefault();

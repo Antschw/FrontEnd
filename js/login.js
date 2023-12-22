@@ -25,7 +25,7 @@ document.querySelector("#loginForm").addEventListener("submit", async (event) =>
 
     // alert((!email || !password) || (email == "" || password == ""));
 
-    if ((!email || !password) || (email == "" || password == "")) {
+    if ((!email || !password) || (email === "" || password === "")) {
         errorNode.innerText = "Merci de préciser l'email et le mot de passe";
         errorNode.removeAttribute("hidden");
         return event.preventDefault();

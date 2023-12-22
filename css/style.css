@@ -1,43 +1,62 @@
-html, body {
+html {
     margin: 0 0;
     padding: 0;
     font-family: Calibri, sans-serif;
 }
 
-.header {
-    margin : 0 0;
-    background-color: rgba(70, 70, 70);
-    text-align: center;
-    padding: 20px 0;
+body {
+    margin: 0 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
-.header a {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin : 0 0;
+    padding: 0;
+    max-height: 15vh;
+    background-color: rgba(70, 70, 70);
+}
+
+header a {
+    margin: 0 0;
+    padding: 0;
     text-decoration: none;
     color: inherit;
 }
 
-.header h1 {
-    font-family: Impact, serif;
-    font-size: 200%;
-    font-style: normal;
-    color: white;
-    text-shadow:
-            -3px -3px 0 #000,
-            3px -3px 0 #000,
-            -3px  3px 0 #000,
-            3px  3px 0 #000;
+header:before {
+    content: "";  /* Ajout d'un élément vide pour l'équilibrage */
+}
+
+.logo{
+    position: relative;
+    margin: 0 0;
+    padding: 0;
+    scale: 50%;
+    transition: transform 0.6s ease;
+}
+
+.logo:hover{
+    transform: rotate(360deg)
 }
 
 .account {
-    margin: 0 0;
-    padding: 20px 20px;
-    position: absolute;
-    top: 7.7%;
-    transform: translateY(-50%);
+    position: relative;
+    transition: transform 0.3s ease;
     right: 3%;
     z-index: 1;
     background-color: transparent;
     border: none;
+}
+
+.account:hover{
+    filter:brightness(200%);
+    transform: scale(1.2);
 }
 
 nav {
@@ -48,12 +67,13 @@ nav {
     padding : 0;
     display: flex;
     justify-content: center;
+    font-family: Forte, serif;
 }
 
 .category {
     padding: 10px;
     flex-basis: calc(25% - 10px);
-    font-family: Arial, sans-serif;
+    font-family: "Yu Gothic UI", sans-serif;
     font-weight: bold;
     background-color: #F8B500;
     text-align: center;
@@ -69,210 +89,6 @@ nav {
     color: #333;
 }
 
-#carousel {
-    position: relative;
-    margin-top : 0;
-    margin-bottom: 2%;
-    padding: 0;
-    width: 100%;
-    max-height: 30%;
-}
-
-#container {
-    margin : 0 0;
-    padding: 0;
-}
-
-#container img {
-    margin: 0 0;
-    padding: 0;
-    min-height: 30%;
-    width: 100%;
-    display: none;
-    opacity: 1;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    height: 40vh;
-    object-fit: cover;
-}
-
-.showing {
-    animation: fade-in 3s;
-}
-
-.hidding{
-    animation: fade-out 3s;
-}
-
-@keyframes fade-in {
-    0%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    }
-}
-
-@keyframes fade-out {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-#previous {
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    left: 3%;
-    z-index: 1;
-    background-color: transparent;
-    border: none;
-}
-
-#next {
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    right: 3%;
-    z-index: 1;
-    background-color: transparent;
-    border: none;
-}
-
-#previous img,
-#next img {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-}
-
-#previous img:hover,
-#next img:hover {
-    filter: brightness(400%);
-}
-
-#progress-bar-container {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    bottom: 5%;
-    width: 100%;
-    height: 20px;
-    z-index: 1;
-}
-
-.progress-bar {
-    width: 20px;
-    height: 5px;
-    background-color: rgba(70, 70, 70, 0.8);
-    margin: 0 5px;
-    transition: width 0.5s ease;
-}
-
-.field h2{
-    text-align: center;
-    font-family: Bahnschrift, serif;
-}
-
-.box-layout {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-}
-
-.box {
-    text-align: center;
-}
-
-.clickable-box {
-    text-decoration: none;
-    color: inherit;
-    flex: 1;
-    margin: 2% 2%;
-    max-width: 30%;
-    min-width: 25%;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    background-color: #f8f9fa;
-}
-
-.clickable-box:hover {
-    transform: scale(1.05);
-}
-
-.article-link-clicked {
-    animation: click-animation 0.45s ease;
-}
-
-@keyframes click-animation {
-    0%, 100% {
-        transform: scale(1.05);
-    }
-    50% {
-        transform: scale(0.95);
-    }
-}
-
-.box img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-section{
-    position: relative;
-    margin: 0 0;
-    padding: 0;
-}
-
-section img{
-    filter: brightness(0.5);
-    margin: 0 0;
-    padding: 0;
-    min-height: 30%;
-    width: 100%;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    height: 50vh;
-    object-fit: cover;
-}
-
-section h1 {
-    position: absolute;
-    color: #dcdada;
-    font-family: Bahnschrift, serif;
-    font-weight: bolder;
-    font-size: 30px;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-section h2 {
-    position: absolute;
-    color: #dcdada;
-    font-weight: lighter;
-    font-size: 20px;
-    font-family: Bahnschrift, serif;
-    font-style: italic;
-    top: 18%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-
-}
-
-article {
-    margin: 50px 30% 30px;
-}
-
 #final {
     margin-top: 30px;
     font-family: "Century Gothic", serif;
@@ -286,14 +102,19 @@ footer {
     text-align: center;
     padding: 30px 0;
     margin-bottom: 0;
+    margin-top: auto;
 }
 
 .footer-link {
     margin-right: 45px;
     margin-left: 45px;
-    padding: 10px 25px;
     text-decoration: none;
     color: whitesmoke;
+    border: 1px solid;
+    border-radius: 43px;
+    font-size: 13px;
+    padding: 7px 30px;
+    line-height: 47px;
 }
 
 .footer-link:hover, .footer-link-focus {
@@ -351,4 +172,35 @@ button:hover {
 #forgotPassword {
     text-decoration: none;
     color: inherit;
+}
+
+/**
+ * Mise en place de scroll bar personnalisé
+ * Firefox n'est pas pris en charge pour cette modification
+ */
+
+/* Ceci est pour Webkit Browsers */
+::-webkit-scrollbar {
+    width: 12px;  /* la largeur des barres verticales*/
+    height: 12px; /*  la hauteur des barres horizontales */
+}
+
+::-webkit-scrollbar-track {
+    background: #f2f3f5; /* couleur du background de la scroll bar */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c2c5; /* couleur du background de la poignée de la scroll bar */
+    border-radius: 10px; /* arrondis sur la poignée de la barre de défilement */
+}
+
+/* Ceci est pour Internet Explorer (RIP) et Microsoft Edge */
+body {
+    scrollbar-base-color: #c1c2c5;
+    scrollbar-face-color: #f2f3f5;
+    scrollbar-3dlight-color: #c1c2c5;
+    scrollbar-highlight-color: #c1c2c5;
+    scrollbar-track-color: #f2f3f5;
+    scrollbar-arrow-color: #c1c2c5;
+    scrollbar-shadow-color: #c1c2c5;
 }

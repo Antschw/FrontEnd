@@ -3,11 +3,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     articles.forEach(function(article) {
         article.addEventListener('click', function() {
-            article.classList.add('article-link-clicked');
+            event.preventDefault(); // Empêche le comportement par défaut du lien
+            const url = this.getAttribute('href'); // Récupère l'URL du lien
+
+            article.classList.add('box-link-clicked'); // Ajout de la classe pour chager l'animation
+
+            setTimeout(function() {
+                window.location.href = url; // Redirige vers l'URL après le délai
+            }, 300);
 
             // Retirer la classe à la fin de l'animation
             article.addEventListener('animationend', function() {
-                article.classList.remove('article-link-clicked');
+                article.classList.remove('box-link-clicked');
             }, { once: true });
         });
     });

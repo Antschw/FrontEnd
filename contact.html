@@ -2,47 +2,61 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Les Sportifs - Contact</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="resources/favicon.png" type="image/x-icon">
     </head>
-    <header class="header">
-        <a href="index.html" class="nostyle">
-            <h1>Les Sportifs</h1>
-        </a>
-        <a href="login.html" class="account"><img src="resources/account_circle.svg" alt="Account"></a>
-    </header>
     <body>
+        <header class="header">
+            <a id="burger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+            <a href="index.html" class="logo">
+                <img src="resources/Logo.png" alt="" >
+            </a>
+            <a href="login.html" class="account"><img src="resources/account_circle.svg" alt="Icone de compte"></a>
+        </header>
         <nav>
             <a href="category.html" class="category">Sports collectifs</a>
             <a href="category.html" class="category">Sports de glisse</a>
             <a href="category.html" class="category">Sports de combat</a>
             <a href="category.html" class="category">Sports Outdoor</a>
         </nav>
-        <div class="contact-form">
-            <h2>Contact</h2>
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label for="name">Nom Prénom</label>
-                    <input type="text" id="name" name="name" placeholder="Nom Prénom" maxlength="100">
-                </div>
-                <div class="form-group">
-                    <label for="email">Adresse Mail</label>
-                    <input type="email" id="email" name="email" placeholder="Adresse Mail" maxlength="50">
-                </div>
-                <div class="form-group">
-                    <label for="subject">Objet</label>
-                    <input type="text" id="subject" name="subject" placeholder="Objet" maxlength="150">
-                </div>
-                <div class="form-group">
-                    <label for="message">Votre Message</label>
-                    <textarea id="message" name="message" placeholder="Votre Message" maxlength="500"></textarea>
-                </div>
-                <button type="submit">Soumettre</button>
-            </form>
-        </div>
+        <main>
+            <div class="contact-form">
+                <h2>Contact</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Nom Prénom</label>
+                        <input type="text" id="name" name="name" placeholder="Nom Prénom" maxlength="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adresse Mail</label>
+                        <input type="email" id="email" name="email" placeholder="Adresse Mail" maxlength="50">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Objet</label>
+                        <input type="text" id="subject" name="subject" placeholder="Objet" maxlength="150">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Votre Message</label>
+                        <textarea id="message" name="message" placeholder="Votre Message" maxlength="500"></textarea>
+                    </div>
+                    <button type="submit">Soumettre</button>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+            <ul>
+                <li><a href="index.html" class="footer-link">Accueil</a></li>
+                <li><a href="category.html" class="footer-link">Catégories</a></li>
+                <li><a href="contact.html" class="footer-link">Contact</a></li>
+                <li><a href="cgu.html" class="footer-link">CGU</a></li>
+            </ul>
+        </footer>
+        <script src="js/script.js"></script>
     </body>
-    <footer>
-        <a href="index.html" class="footer-link">Accueil</a> | <a href="category.html" class="footer-link">Catégories</a> | <a href="contact.html" class="footer-link">Contact</a> | <a href="cgu.html" class="footer-link">CGU</a>
-    </footer>
 </html>

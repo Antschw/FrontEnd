@@ -1,0 +1,242 @@
+* html, * body {
+  margin: 0 0;
+  padding: 0;
+  font-family: Calibri, sans-serif;
+}
+
+* .header {
+  margin: 0 0;
+  background-color: #464646;
+  text-align: center;
+  padding: 20px 0;
+}
+
+* .header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* .header h1 {
+  font-family: Impact, serif;
+  font-size: 200%;
+  font-style: normal;
+  color: white;
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px  3px 0 #000, 3px  3px 0 #000;
+}
+
+* .account {
+  margin: 0 0;
+  padding: 20px 20px;
+  position: absolute;
+  top: 7.7%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 3%;
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+}
+
+* nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  margin: 0 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* .category {
+  padding: 10px;
+  -ms-flex-preferred-size: calc(25% - 10px);
+      flex-basis: calc(25% - 10px);
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  background-color: #F8B500;
+  text-align: center;
+  -webkit-box-shadow: 8px 8px 200px black;
+          box-shadow: 8px 8px 200px black;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+* .category:hover {
+  background-color: #cb9500;
+  color: #333;
+}
+
+* footer {
+  background-color: #464646;
+  color: white;
+  text-underline-mode: off;
+  text-align: center;
+  padding: 30px 0;
+  margin-bottom: 0;
+}
+
+* .footer-link {
+  margin-right: 45px;
+  margin-left: 45px;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+* .footer-link:hover, * .footer-link-focus {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+
+* .contact-form {
+  background-color: #f9f9f9;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+* .contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+* .form-group {
+  margin-bottom: 15px;
+}
+
+* .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+* .form-group input,
+* .form-group textarea {
+  width: 96%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+* .form-group textarea {
+  height: 100px;
+}
+
+* button {
+  background-color: #F8B500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+* button:hover {
+  background-color: #cb9500;
+}
+
+* #forgotPassword {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main h1 {
+  text-align: center;
+}
+
+main .grid-container {
+  display: -ms-grid;
+  display: grid;
+  padding: 0% 10%;
+}
+
+@media screen and (max-width: 600px) {
+  main .grid-container {
+    padding: 0% 0px;
+  }
+}
+
+main .grid-container--fill {
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+main .grid-container--fit {
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+main .grid-element {
+  padding: 20px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+main .grid-element .element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .grid-element .element .title {
+  margin: 5%;
+  font-weight: bold;
+  font-size: 120%;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+main .grid-element .element .title a {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+main .grid-element .element .title a:hover {
+  color: gray;
+  font-size: 21px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+main .grid-element .element a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+main .grid-element .element a:hover {
+  color: gray;
+  font-size: 20px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+/*# sourceMappingURL=sSitemap.css.map */

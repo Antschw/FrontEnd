@@ -200,19 +200,19 @@
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         transition: transform 0.3s ease;
         background-color: #f8f9fa;
-         @media screen and (max-width: 1200px) {
+        @media screen and (max-width: 1200px) {
         max-width: 50%;
         flex: 1 0 30%;
-    }
+        }
 
-    @media screen and (max-width: 800px) {
-        max-width: 70%;
-        flex: 1 0 100%;
-    }
+        @media screen and (max-width: 800px) {
+            max-width: 70%;
+            flex: 1 0 100%;
+        }
 
-    @media screen and (max-width: 600px) {
-        max-width: 100%;
-    }
+        @media screen and (max-width: 600px) {
+            max-width: 96%;
+        }
     }
     
     .clickable-box:hover {

@@ -6,20 +6,6 @@ let passwordVerificationInput = document.querySelector("#passwordVerification");
 
 let errorNode = document.querySelector("#errorMessage");
 
-function notify(message) {
-    let container = document.querySelector("#notification-container");
-
-    let notification = document.createElement("div");
-    notification.classList.add("notification");
-    notification.textContent = message;
-
-    container.appendChild(notification);
-
-    setTimeout(() => {
-        notification.remove();
-    }, 3000);
-}
-
 document.querySelector("#registerForm").addEventListener("submit", async (event) => {
     errorNode.setAttribute("hidden", "");
 

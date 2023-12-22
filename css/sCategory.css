@@ -1,0 +1,126 @@
+* html, * body {
+  margin: 0 0;
+  padding: 0;
+  font-family: Calibri, sans-serif;
+}
+
+* .field h2 {
+  text-align: center;
+  font-family: Bahnschrift, serif;
+}
+
+* .box-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* .box {
+  text-align: center;
+}
+
+* .clickable-box {
+  text-decoration: none;
+  color: inherit;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 20%;
+          flex: 1 0 20%;
+  margin: 2% 2%;
+  max-width: 30%;
+  min-width: 25%;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  background-color: #f8f9fa;
+}
+
+@media screen and (max-width: 1200px) {
+  * .clickable-box {
+    max-width: 50%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 30%;
+            flex: 1 0 30%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  * .clickable-box {
+    max-width: 70%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  * .clickable-box {
+    max-width: 96%;
+  }
+}
+
+* .clickable-box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+* .article-link-clicked {
+  -webkit-animation: click-animation 0.45s ease;
+          animation: click-animation 0.45s ease;
+}
+
+@-webkit-keyframes click-animation {
+  0%, 100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  50% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+}
+
+@keyframes click-animation {
+  0%, 100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  50% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+}
+
+* .box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+* .box h3 {
+  text-align: left;
+  margin-left: 7%;
+}
+
+* .box p {
+  text-align: left;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+* .box .gray {
+  text-align: left;
+  margin-left: 7%;
+  color: gray;
+}
+/*# sourceMappingURL=sCategory.css.map */

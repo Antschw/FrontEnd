@@ -1,0 +1,96 @@
+* html, * body {
+  margin: 0 0;
+  padding: 0;
+  font-family: Calibri, sans-serif;
+}
+
+main {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main h1 {
+  text-align: center;
+}
+
+main .grid-container {
+  display: -ms-grid;
+  display: grid;
+  padding: 0% 10%;
+}
+
+@media screen and (max-width: 600px) {
+  main .grid-container {
+    padding: 0% 0px;
+  }
+}
+
+main .grid-container--fill {
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+main .grid-container--fit {
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+main .grid-element {
+  padding: 20px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+main .grid-element .element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .grid-element .element .title {
+  margin: 5%;
+  font-weight: bold;
+  font-size: 120%;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+main .grid-element .element .title a {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+main .grid-element .element .title a:hover {
+  color: gray;
+  font-size: 21px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+main .grid-element .element a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+main .grid-element .element a:hover {
+  color: gray;
+  font-size: 20px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+/*# sourceMappingURL=sSitemap.css.map */
